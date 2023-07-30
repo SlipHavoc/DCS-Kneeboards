@@ -32,4 +32,6 @@ I've tried to cover most functions for every plane, including:
 
 The kneeboards are personalized to my own setup, and I've written them for my own personal use.  They are not fully comprehensive, nor are they complete, and in some cases they may not be fully accurate.  They may change at any time.  Feel free modify your own copies as you see fit, or use mine as a guide, whatever.  See the **Templates** folder for some blank template files, or just start with a copy and hack away.  I've tried to standardize on the format, but as that has evolved over time, some of the older kneeboards haven't been updated to the new format.
 
+After some testing (see the Font Readability Test folder), I settled on DejaVu Sans Condensed as the font.  I believe that comes with LibreOffice, but if you don't have it, you should be able to [download it from somewhere](https://www.google.com/search?hl=en&q=dejavu%20sans%20condensed).  Font installation is outside the scope of this document.
+
 The steps in the kneeboard may be greatly simplified or abbreviated, and I've written them with little to no regard for the "proper" or "correct" procedures in real life.  If that kind of thing is very important to you, these may not be what you want.
