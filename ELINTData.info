@@ -1,0 +1,61 @@
+ELINT:
+
+Emitter: 1
+Freq: A PRF: 300
+First signal: 5:53:0 Last signal: 6:12:34
+Sequence broadca: 1s Silent: 6s
+NW: 36:46:38 034:55:36 SE: 36:47:16 035:14:38
+
+Emitter: 2
+Freq: B PRF: 1000
+First signal: 5:55:26 Last signal: 6:12:39
+Sequence broadca: 0.2s Silent: -0.1s
+NW: 36:50:28 036:49:20 SE: 36:49:10 036:53:32
+
+Emitter: 3
+Freq: A PRF: 447
+First signal: 6:0:6 Last signal: 6:12:27
+Sequence broadca: 0.2s Silent: -0.1s
+NW: 36:59:49 035:31:19 SE: 36:59:42 035:31:26
+
+Emitter: 4
+Freq: A PRF: 697
+First signal: 6:2:9 Last signal: 6:7:3
+Sequence broadca: 0.5s Silent: 8.5s
+NW: 36:36:55 035:50:29 SE: 36:36:57 035:51:29
+
+Emitter: 5
+Freq: A PRF: 1303
+First signal: 6:2:13 Last signal: 6:5:51
+Sequence broadca: 0.6s Silent: 2s
+NW: 36:36:56 036:09:13 SE: 36:38:51 038:28:18
+
+Emitter: 6
+Freq: B PRF: 3400
+First signal: 6:7:48 Last signal: 6:12:37
+Sequence broadca: 0.2s Silent: 0.5s
+NW: 36:20:37 036:39:48 SE: 36:13:55 037:06:01
+
+Emitter: 7
+Freq: B PRF: 5400
+First signal: 6:7:48 Last signal: 6:12:36
+Sequence broadca: 0.2s Silent: 0.5s
+NW: 36:17:59 036:50:21 SE: 36:13:52 037:06:09
+
+Emitter: 8
+Freq: A PRF: 967
+First signal: 6:7:54 Last signal: 6:11:26
+Sequence broadca: 1s Silent: 2s
+NW: 36:17:11 033:43:49 SE: 36:22:10 036:25:01
+
+Emitter: 9
+Freq: A PRF: 768
+First signal: 6:10:22 Last signal: 6:11:16
+Sequence broadca: 1s Silent: 2s
+NW: 37:39:34 033:35:38 SE: 36:19:41 036:43:37
+
+Emitter: 10
+Freq: A PRF: 400
+First signal: 6:11:13 Last signal: 6:12:33
+Sequence broadca: 1.5s Silent: 8.5s
+NW: 36:07:36 036:48:57 SE: 35:38:26 037:01:43

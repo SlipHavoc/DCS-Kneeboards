@@ -1,0 +1,67 @@
+@echo off
+rem
+rem This copies all .png files from the airplane subfolders in the current folder to the matching airplane folders in DCS.  It will only copy if there is a matching folder in DCS.
+rem NOTE ">nul 2>&1" redirects standard output to nul and standard error to standard output, see https://stackoverflow.com/a/32607539 .
+rem
+
+rem Iterate through all the subfolders in current folder and delete existing .png files from matching folder in DCS Kneeboard folder.
+for /D %%d in (./*) do (
+	if exist "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d" (
+		echo Deleting existing "* - * - *.png" kneeboard files from %%d ...
+		del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d\* - * - *.png" >nul 2>&1
+	) else (
+		rem echo "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d" doesn't exist
+	)
+)
+rem Special behavior for SA342...
+echo Deleting existing "* - SA342 - *.png" kneeboard files from SA342L, SA342M, SA342Minigun, SA342Mistral...
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342L\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342M\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342Minigun\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342Mistral\* - * - *.png" >nul 2>&1
+rem Special behavior for MiG-29...
+echo Deleting existing "* - MiG-29 - *.png" kneeboard files from MiG-29A, MiG-29G, MiG-29S...
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29A\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29G\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29S\* - * - *.png" >nul 2>&1
+rem Special behavior for Su-27/Su-33/J-11A...
+echo Deleting existing "* - Su-27 - *.png" kneeboard files from Su-27, Su-33, J-11A...
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\Su-27\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\Su-33\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\J-11A\* - * - *.png" >nul 2>&1
+rem Special behavior for F-14A-135-GR/B...
+echo Deleting existing "* - F-14 - *.png" kneeboard files from F-14A-135-GR, F-14B
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\F-14A-135-GR\* - * - *.png" >nul 2>&1
+del /q "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\F-14B\* - * - *.png" >nul 2>&1
+
+rem Iterate through all the subfolders in current folder and copy pngs to matching folder in DCS Kneeboard folder.
+for /D %%d in (./*) do (
+	if exist "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d" (
+		echo Copying %%d ...
+		copy "%%d\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d" >nul 2>&1
+	) else (
+		rem echo "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\%%d" doesn't exist
+	)
+)
+rem Special behavior for SA342...
+echo Copying SA342 (all) ...
+copy "SA342 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342L" >nul 2>&1
+copy "SA342 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342M" >nul 2>&1
+copy "SA342 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342Minigun" >nul 2>&1
+copy "SA342 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\SA342Mistral" >nul 2>&1
+rem Special behavior for MiG-29...
+echo Copying MiG-29 (all) ...
+copy "MiG-29 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29A" >nul 2>&1
+copy "MiG-29 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29G" >nul 2>&1
+copy "MiG-29 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\MiG-29S" >nul 2>&1
+rem Special behavior for Su-27/Su-33/J-11A...
+echo Copying Su-27 (all) ...
+copy "Su-27 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\Su-27" >nul 2>&1
+copy "Su-27 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\Su-33" >nul 2>&1
+copy "Su-27 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\J-11A" >nul 2>&1
+rem Special behavior for F-14A-135-GR/F-14B...
+echo Copying F-14 (all) ...
+copy "F-14 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\F-14A-135-GR" >nul 2>&1
+copy "F-14 (all)\pngs\*.png" "%userprofile%\Saved Games\DCS.openbeta\Kneeboard\F-14B" >nul 2>&1
+
+@pause

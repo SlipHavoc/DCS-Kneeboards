@@ -1,0 +1,10 @@
+# Ignore all .png files.
+**/*.png
+# Ignore all .7z files
+**/*.7z
+# Ignore all .zip files
+**/*.zip
+# Ignore all .tmp files
+**/*.tmp
+# Ignore desktop.ini
+**/desktop.ini
