@@ -110,6 +110,8 @@ globalKneeboards = [
 	'002 - Conv nmi-km-ft 0.01-1.00, Morse Code.png',
 	'003 - Conv hpa-mmHg-inHg.png',
 	'004 - Threat database, RWR.png',
+	'006 - MP Server Notes.png',
+	'007 - MP Server Notes - Pretense.png',
 	# Add more to this list as needed...
 ]
 for filepath in glob.iglob(f'{userProfile}/Saved Games/DCS.openbeta/Kneeboard/*'):
